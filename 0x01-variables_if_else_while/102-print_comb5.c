@@ -19,6 +19,10 @@ void print_nums(int i, int j)
 	{
 		for (l = 0; l < 10; l += 1)
 		{
+			if (i == 0 && j == 0 && k == 0 && l == 0)
+			{
+				continue;
+			}
 			/**
 			 * skip_point += 1;
 			 * if (skip_point == 11)
