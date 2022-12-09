@@ -49,11 +49,6 @@ int main(void)
 {
 	int i;
 	int j;
-	int k;
-	int l;
-	int skip_point;
-
-	skip_point = 0;
 
 	for (i = 0; i < 10; i += 1)
 	{
