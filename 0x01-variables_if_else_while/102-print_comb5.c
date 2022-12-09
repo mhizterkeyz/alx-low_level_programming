@@ -11,30 +11,31 @@ void print_nums(int i, int j)
 {
 	int k;
 	int l;
-	int skip_point;
+	/* int skip_point; */
 
-	skip_point = 1;
+	/* skip_point = 1; */
 
 	for (k = 0; k < 10; k += 1)
 	{
 		for (l = 0; l < 10; l += 1)
 		{
-			skip_point += 1;
-			if (skip_point == 11)
+			/**
+			 * skip_point += 1;
+			 * if (skip_point == 11)
+			 * {
+			 *	skip_point = 1;
+			 * } else
+			 * {
+			 */
+			putchar('0' + i);
+			putchar('0' + j);
+			putchar(' ');
+			putchar('0' + k);
+			putchar('0' + l);
+			if (!(i == 9 && j == 9 && k == 9 && l == 9))
 			{
-				skip_point = 1;
-			} else
-			{
-				putchar('0' + i);
-				putchar('0' + j);
+				putchar(',');
 				putchar(' ');
-				putchar('0' + k);
-				putchar('0' + l);
-				if (!(i == 9 && j == 9 && k == 9 && l == 9))
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
 		}
 	}
