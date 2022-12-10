@@ -11,13 +11,13 @@ void print_nums(int i, int j)
 {
 	int k;
 	int l;
-	/* int skip_point; */
 
-	/* skip_point = 1; */
+	k = i;
+	l = j + 1;
 
-	for (k = i; k < 10; k += 1)
+	for (; k < 10; k += 1)
 	{
-		for (l = j + 1; l < 10; l += 1)
+		for (; l < 10; l += 1)
 		{
 			putchar('0' + i);
 			putchar('0' + j);
@@ -30,6 +30,7 @@ void print_nums(int i, int j)
 				putchar(' ');
 			}
 		}
+
 		l = 0;
 	}
 }
