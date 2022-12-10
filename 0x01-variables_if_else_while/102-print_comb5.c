@@ -15,28 +15,16 @@ void print_nums(int i, int j)
 
 	/* skip_point = 1; */
 
-	for (k = 0; k < 10; k += 1)
+	for (k = i; k < 10; k += 1)
 	{
-		for (l = 0; l < 10; l += 1)
+		for (l = j + 1; l < 10; l += 1)
 		{
-			if (i == 0 && j == 0 && k == 0 && l == 0)
-			{
-				continue;
-			}
-			/**
-			 * skip_point += 1;
-			 * if (skip_point == 11)
-			 * {
-			 *	skip_point = 1;
-			 * } else
-			 * {
-			 */
-			putchar('0' + i);
-			putchar('0' + j);
+			putchar(i);
+			putchar(j);
 			putchar(' ');
 			putchar('0' + k);
 			putchar('0' + l);
-			if (!(i == 9 && j == 9 && k == 9 && l == 9))
+			if (!(i == 9 && j == 8 && k == 9 && l == 9))
 			{
 				putchar(',');
 				putchar(' ');
