@@ -30,6 +30,7 @@ void print_nums(int i, int j)
 				putchar(' ');
 			}
 		}
+		l = 0;
 	}
 }
 
