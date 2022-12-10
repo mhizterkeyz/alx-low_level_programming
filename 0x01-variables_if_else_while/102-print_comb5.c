@@ -19,8 +19,8 @@ void print_nums(int i, int j)
 	{
 		for (l = j + 1; l < 10; l += 1)
 		{
-			putchar(i);
-			putchar(j);
+			putchar('0' + i);
+			putchar('0' + j);
 			putchar(' ');
 			putchar('0' + k);
 			putchar('0' + l);
