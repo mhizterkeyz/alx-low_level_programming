@@ -9,6 +9,7 @@ int main(void)
 	int i;
 	int lst;
 	int tmp;
+	int cur;
 
 	lst = 1;
 	cur = 2;
