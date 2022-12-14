@@ -20,7 +20,7 @@ int main(void)
 	{
 		if (i >= 49)
 		{
-			print("%ld\n", cur +lst);
+			printf("%ld\n", cur +lst);
 			break;
 		}
 		printf("%ld, ", cur + lst);
