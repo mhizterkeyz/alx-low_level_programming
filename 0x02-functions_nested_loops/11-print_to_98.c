@@ -7,7 +7,7 @@
 void print(long n)
 {
 	if (n < 0) {
-		putchar('-');
+		_putchar('-');
 		n = -n;
 	}
 
@@ -16,7 +16,7 @@ void print(long n)
 		print(n/10);
 	}
 
-	putchar(n%10 + '0');
+	_putchar(n%10 + '0');
 }
 
 /**
