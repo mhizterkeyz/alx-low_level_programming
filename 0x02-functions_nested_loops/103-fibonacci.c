@@ -20,7 +20,7 @@ int main(void)
 		tmp = cur;
 		cur += lst;
 		lst = tmp;
-		if (cur % 2 === 0)
+		if (cur % 2 == 0)
 		{
 			sum += cur;
 		}
