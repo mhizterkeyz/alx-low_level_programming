@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * print_last_digit - prints last digit of arg
@@ -8,7 +9,7 @@ int print_last_digit(int arg)
 {
 	int res;
 
-	res = arg % 10;
+	res = abs(arg % 10);
 
 	_putchar('0' + res);
 
