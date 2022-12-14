@@ -26,7 +26,6 @@ void print(long n)
  */
 void print_to_98(int n)
 {
-	int k;
 	int c;
 
 	c = n > 98;
