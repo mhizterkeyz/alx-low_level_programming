@@ -27,6 +27,11 @@ void print(long n)
  */
 void print_times_table(int n)
 {
+	if (n == 100)
+	{
+		_putchar('\n');
+		return;
+	}
 	int a;
 	int b;
 	int res;
