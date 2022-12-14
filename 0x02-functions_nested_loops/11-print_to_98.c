@@ -1,5 +1,25 @@
 #include "main.h"
 /**
+ * print - prints long int with putchar
+ * @n: long int
+ * Return: void
+ */
+void print(long n)
+{
+	if (n < 0) {
+		putchar('-');
+		n = -n;
+	}
+
+	if (n/10)
+	{
+		print(n/10);
+	}
+
+	putchar(n%10 + '0');
+}
+
+/**
  * print_to_98 - prints natural numbers from n to 98
  * @n: int
  * Return: void
@@ -13,19 +33,7 @@ void print_to_98(int n)
 
 	while (n != 98)
 	{
-		k = n;
-		if (k < 0)
-		{
-			_putchar('-');
-			k = -k;
-		}
-
-		if (k > 9)
-		{
-			_putchar('0' + k / 10);
-		}
-
-		_putchar('0' + k % 10);
+		print(n);
 		if (n < 98)
 		{
 			_putchar(',');
@@ -33,7 +41,6 @@ void print_to_98(int n)
 		}
 		n += c ? -1 : 1;
 	}
-	_putchar('0' + 9);
-	_putchar('0' + 8);
+	print(98);
 	_putchar('\n');
 }
