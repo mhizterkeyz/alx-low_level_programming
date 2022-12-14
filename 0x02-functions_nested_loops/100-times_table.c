@@ -27,14 +27,15 @@ void print(long n)
  */
 void print_times_table(int n)
 {
+	int a;
+	int b;
+	int res;
+
 	if (n == 100)
 	{
 		_putchar('\n');
 		return;
 	}
-	int a;
-	int b;
-	int res;
 
 	for (a = 0; a <= n; a += 1)
 	{
