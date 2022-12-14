@@ -15,7 +15,7 @@ int main(void)
 	cur = 2;
 	sum = 2;
 
-	while(cur <= 4000000)
+	while (cur <= 4000000)
 	{
 		tmp = cur;
 		cur += lst;
