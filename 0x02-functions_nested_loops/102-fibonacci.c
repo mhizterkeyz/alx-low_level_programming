@@ -14,8 +14,15 @@ int main(void)
 	lst = 1;
 	cur = 2;
 
-	for (i = 0; i < 50; i += 1)
+	printf("1, 2, ");
+
+	for (i = 2; i < 50; i += 1)
 	{
+		if (i >= 49)
+		{
+			print("%ld\n", cur +lst);
+			break;
+		}
 		printf("%ld, ", cur + lst);
 		tmp = cur;
 		cur += lst;
