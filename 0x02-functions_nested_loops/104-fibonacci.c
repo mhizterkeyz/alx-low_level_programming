@@ -11,7 +11,7 @@ int main(void)
 	double cur;
 	double tmp;
 
-	i = 0;
+	i = 2;
 	lst = 1;
 	cur = 2;
 
