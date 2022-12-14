@@ -7,7 +7,7 @@
 void print_to_98(int n)
 {
 	int k;
-	bool c;
+	int c;
 
 	c = n > 98;
 
