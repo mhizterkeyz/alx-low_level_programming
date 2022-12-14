@@ -12,8 +12,8 @@ int main(void)
 	double tmp;
 
 	i = 2;
-	lst = 1;
-	cur = 2;
+	lst = 1.0;
+	cur = 2.0;
 
 	printf("1, 2, ");
 
