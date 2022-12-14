@@ -16,7 +16,7 @@ int main(void)
 
 	for (i = 0; i < 50; i += 1)
 	{
-		printf("%d, ", cur + lst);
+		printf("%ld, ", cur + lst);
 		tmp = cur;
 		cur += lst;
 		lst = tmp;
