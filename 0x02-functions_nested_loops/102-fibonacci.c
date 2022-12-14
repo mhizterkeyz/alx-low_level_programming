@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i;
-	int lst;
-	int tmp;
-	int cur;
+	long lst;
+	long tmp;
+	long cur;
 
 	lst = 1;
 	cur = 2;
