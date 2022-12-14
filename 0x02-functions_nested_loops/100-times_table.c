@@ -33,7 +33,7 @@ void print_times_table(int n)
 
 	for (a = 0; a <= n; a += 1)
 	{
-		for (b = 0; b < n; b += 1)
+		for (b = 0; b <= n; b += 1)
 		{
 			res = a * b;
 			if (b != 0)
