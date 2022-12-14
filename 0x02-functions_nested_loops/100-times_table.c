@@ -33,7 +33,6 @@ void print_times_table(int n)
 
 	if (n == 100)
 	{
-		_putchar('\n');
 		return;
 	}
 
