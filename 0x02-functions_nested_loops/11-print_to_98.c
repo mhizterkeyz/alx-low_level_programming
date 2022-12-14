@@ -7,8 +7,11 @@
 void print_to_98(int n)
 {
 	int k;
+	bool c;
 
-	while (n < 99)
+	c = n > 98;
+
+	while (n != 98)
 	{
 		k = n;
 		if (k < 0)
@@ -28,6 +31,9 @@ void print_to_98(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
-		n += 1;
+		n += c ? -1 : 1;
 	}
+	_putchar('0' + 9);
+	_putchar('0' + 8);
+	_putchar('\n')
 }
