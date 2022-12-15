@@ -33,12 +33,12 @@ int is_prime(int n)
  */
 int main(void)
 {
-	int i;
-	int largest_prime;
+	unsigned long i;
+	unsigned long largest_prime;
 
 	i = 2;
 	largest_prime = 0;
-	while (i < sqrt(612852475143))
+	while (i < 612852475143)
 	{
 		if (612852475143 % i == 0 && is_prime(i))
 		{
@@ -47,7 +47,7 @@ int main(void)
 		i += 1;
 	}
 
-	printf("%d\n", largest_prime);
+	printf("%lu\n", largest_prime);
 
 	return (0);
 }
