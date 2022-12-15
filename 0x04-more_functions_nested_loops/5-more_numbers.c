@@ -21,7 +21,9 @@ void more_numbers(void)
 				_putchar('0' + j / 10);
 			}
 			_putchar('0' + j % 10);
+			j += 1;
 		}
 		_putchar('\n');
+		i += 1;
 	}
 }
