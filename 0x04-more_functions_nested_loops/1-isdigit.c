@@ -19,5 +19,15 @@ int _isdigit(int c)
 		l += 1;
 	}
 
+	l = '0';
+	while (l <= '9')
+	{
+		if (c == l)
+		{
+			return (1);
+		}
+		l += '1';
+	}
+
 	return (0);
 }
