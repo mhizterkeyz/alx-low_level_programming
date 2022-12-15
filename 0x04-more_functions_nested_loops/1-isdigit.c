@@ -7,7 +7,7 @@
 
 int _isdigit(int c)
 {
-	int i;
+	int l;
 
 	l = 0;
 	while (l <= 9)
