@@ -10,12 +10,10 @@ int is_prime(int n)
 {
 	int i;
 
-	if (n == 2) {
+	if (n == 2)
 		return (1);
-	}
-	if (n < 2) {
+	if (n < 2)
 		return (0);
-	}
 
 	for (i = 3; i < sqrt(n); i += 1)
 	{
@@ -50,4 +48,6 @@ int main(void)
 	}
 
 	printf("%d\n", largest_prime);
+
+	return (0);
 }
