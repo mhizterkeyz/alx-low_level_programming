@@ -38,7 +38,7 @@ int main(void)
 
 	i = 2;
 	largest_prime = 0;
-	while (i < 612852475143)
+	while (i < 612852475143 / 1000)
 	{
 		if (612852475143 % i == 0 && is_prime(i))
 		{
