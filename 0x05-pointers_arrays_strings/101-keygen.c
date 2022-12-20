@@ -3,23 +3,39 @@
 #include <time.h>
 
 /**
- * main - does something
- *
- * Return: int
+ * main - random password generator for program 101-crackme
+ * Return: Always 0
  */
 int main(void)
 {
-	char factory[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char str[58];
-	int i;
+	int l, m, n, o;
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char p[58];
 
-	srand(time(0));
-	for (i = 0; i < 57; i += 1)
+	srand(time(NULL));
+	while (o != 2772)
 	{
-		str[i] = factory[rand() % 62];
+		l = n = o = 0;
+		while ((2772 - 122) > o)
+		{
+			m = rand() % 62;
+			p[l] = c[m];
+			o += c[m];
+			l++;
+		}
+		while (c[n])
+		{
+			if (c[n] == (2772 - o))
+			{
+				p[l] =  c[n];
+				o += c[n];
+				l++;
+				break;
+			}
+			n++;
+		}
 	}
-	str[57] = '\0';
-	printf("%s\n", str);
-
+	p[l] = '\0';
+	printf("%s", p);
 	return (0);
 }
