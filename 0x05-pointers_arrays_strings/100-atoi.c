@@ -8,7 +8,7 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int res = 0;
+	unsigned int res = 0;
 	int sign = 1;
 	int started = 0;
 
@@ -19,7 +19,7 @@ int _atoi(char *s)
 			sign *= -1;
 		}
 
-		while (48 <= s[i] && s[i] <= 57)
+		while (s[i] >= 48 && s[i] <= 57)
 		{
 			started = 1;
 			res = (res * 10) + (s[i] - '0');
