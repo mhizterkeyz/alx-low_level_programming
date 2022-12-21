@@ -4,6 +4,7 @@
  * _strncat - does something
  * @dest: param
  * @src: param
+ * @n: param
  * Return: something
  */
 char *_strncat(char *dest, char *src, int n)
