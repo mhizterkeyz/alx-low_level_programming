@@ -10,9 +10,9 @@ int _count_it(char *s, int c)
 {
 	if (s[c] == '\0')
 	{
-		return c;
+		return (c);
 	}
-	return _count_it(s, c + 1);
+	return (_count_it(s, c + 1));
 }
 
 /**
@@ -22,5 +22,5 @@ int _count_it(char *s, int c)
  */
 int _strlen_recursion(char *s)
 {
-	return _count_it(s, 0);
+	return (_count_it(s, 0));
 }
