@@ -8,7 +8,7 @@
  */
 int _count_it(char *s, int c)
 {
-	if (!s[c])
+	if (s[c] == '\0')
 	{
 		return c;
 	}
