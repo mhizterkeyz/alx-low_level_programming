@@ -25,4 +25,5 @@ void print(char *s, int p)
 void _puts_recursion(char *s)
 {
 	print(s, 0);
+	_putchar('\n');
 }
