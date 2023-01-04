@@ -14,7 +14,7 @@ void print(char *s, int p)
 	}
 
 	_putchar(s[p]);
-	print(s, p++);
+	print(s, p + 1);
 }
 
 /**
