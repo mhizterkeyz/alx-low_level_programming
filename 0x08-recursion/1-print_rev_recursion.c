@@ -26,5 +26,4 @@ void _print_it(char *s, int p)
 void _print_rev_recursion(char *s)
 {
 	_print_it(s, strlen(s) - 1);
-	_putchar('\n');
 }
