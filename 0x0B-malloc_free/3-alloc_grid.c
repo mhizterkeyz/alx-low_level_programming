@@ -4,6 +4,7 @@
 /**
  * free_grid - does something
  * @grid: param
+ * @l: param
  * Return: void
  */
 void free_grid(int **grid, int l)
