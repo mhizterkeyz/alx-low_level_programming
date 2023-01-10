@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * free_grid - does something
+ * _free_grid - does something
  * @grid: param
  * @l: param
  * Return: void
  */
-void free_grid(int **grid, int l)
+void _free_grid(int **grid, int l)
 {
 	int j = 0;
 
@@ -49,7 +49,7 @@ int **alloc_grid(int width, int height)
 		grid[i] = malloc(width * sizeof(int));
 		if (grid[i] == NULL)
 		{
-			free_grid(grid, i);
+			_free_grid(grid, i);
 			return (NULL);
 		}
 		k = 0;
