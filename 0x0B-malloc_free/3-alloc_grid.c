@@ -7,7 +7,7 @@
  * @height: param
  * Return: int
  */
-int **alloc_grid(int width, int height)
+int **alloc_grid(int height, int width)
 {
 	int **grid;
 	int i;
