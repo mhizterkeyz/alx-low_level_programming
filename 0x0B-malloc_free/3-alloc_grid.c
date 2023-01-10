@@ -7,7 +7,7 @@
  * @height: param
  * Return: int
  */
-int **alloc_grid(int height, int width)
+int **alloc_grid(int width, int height)
 {
 	int **grid;
 	int i;
@@ -26,7 +26,7 @@ int **alloc_grid(int height, int width)
 	i = 0;
 	while (i < height)
 	{
-		grid[i] = calloc(width);
+		grid[i] = calloc(width, sizeof(int));
 
 		i += 1;
 	}
