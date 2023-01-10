@@ -2,6 +2,23 @@
 #include "main.h"
 
 /**
+ * free_grid - does something
+ * @grid: param
+ * Return: void
+ */
+void free_grid(int **grid, int l)
+{
+	int j = 0;
+
+	while (j <= l)
+	{
+		free(grid[j]);
+		j += 1;
+	}
+	free(grid);
+}
+
+/**
  * alloc_grid - does something
  * @width: param
  * @height: param
@@ -31,14 +48,7 @@ int **alloc_grid(int width, int height)
 		grid[i] = malloc(width * sizeof(int));
 		if (grid[i] == NULL)
 		{
-			int j = 0;
-
-			while (j <= i)
-			{
-				free(grid[j]);
-				j += 1;
-			}
-			free(grid);
+			free_grid(grid);
 			return (NULL);
 		}
 		k = 0;
