@@ -61,6 +61,7 @@ char **strtow(char *str)
 		else if (tmp != empty)
 		{
 			res[j] = tmp;
+			free(tmp);
 			j += 1;
 			tmp = "";
 		}
@@ -68,6 +69,7 @@ char **strtow(char *str)
 	if (tmp != empty)
 	{
 		res[j] = tmp;
+		free(tmp);
 		j += 1;
 	}
 	res[j] = NULL;
