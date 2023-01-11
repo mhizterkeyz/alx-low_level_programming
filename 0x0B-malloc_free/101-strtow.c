@@ -70,7 +70,6 @@ char **strtow(char *str)
 		res[j] = tmp;
 		j += 1;
 	}
-	free(tmp);
 	res[j] = NULL;
 	return (NULL);
 }
