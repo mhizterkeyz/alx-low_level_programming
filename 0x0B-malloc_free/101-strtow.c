@@ -36,11 +36,12 @@ char **strtow(char *str)
 	char **res;
 	char *tmp = "";
 	char *empty = "";
+	char *empty2 = " ";
 	int i;
 	int j = 0;
 	int len;
 
-	if (str == NULL || strlen(str) < 1)
+	if (str == NULL || str == empty || str == empty2)
 	{
 		return (NULL);
 	}
