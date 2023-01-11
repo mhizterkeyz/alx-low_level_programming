@@ -34,11 +34,12 @@ char *strapnd(char *s1, char s2)
 char **strtow(char *str)
 {
 	char **res;
+	char *tmp;
 	int i;
 	int j;
 	int len;
 
-	if (str == NULL || str == "")
+	if (str == NULL || !str)
 	{
 		return (NULL);
 	}
