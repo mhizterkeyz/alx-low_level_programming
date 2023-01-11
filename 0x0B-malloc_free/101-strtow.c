@@ -34,10 +34,10 @@ char *strapnd(char *s1, char s2)
 char **strtow(char *str)
 {
 	char **res;
-	char *tmp;
+	char *tmp = "";
 	char *empty = "";
 	int i;
-	int j;
+	int j = 0;
 	int len;
 
 	if (str == NULL || str == empty)
@@ -50,11 +50,9 @@ char **strtow(char *str)
 	{
 		return (NULL);
 	}
-	tmp = "";
-	j = 0;
 	for (i = 0; i < len; i += 1)
 	{
-		if (str[i] == ' ')
+		if (str[i] != ' ')
 		{
 			tmp = strapnd(tmp, str[i]);
 		}
