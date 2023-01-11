@@ -35,11 +35,12 @@ char **strtow(char *str)
 {
 	char **res;
 	char *tmp;
+	char *empty = "";
 	int i;
 	int j;
 	int len;
 
-	if (str == NULL || !str)
+	if (str == NULL || str == empty)
 	{
 		return (NULL);
 	}
@@ -57,14 +58,14 @@ char **strtow(char *str)
 		{
 			tmp = strapnd(tmp, str[i]);
 		}
-		else if (tmp != "")
+		else if (tmp != empty)
 		{
 			res[j] = tmp;
 			j += 1;
 			tmp = "";
 		}
 	}
-	if (tmp != "")
+	if (tmp != empty)
 	{
 		res[j] = tmp;
 		j += 1;
