@@ -40,7 +40,7 @@ char **strtow(char *str)
 	int j = 0;
 	int len;
 
-	if (str == NULL || str == empty)
+	if (str == NULL || strlen(str) < 1)
 	{
 		return (NULL);
 	}
