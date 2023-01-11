@@ -39,6 +39,7 @@ char **strtow(char *str)
 	char *empty2 = " ";
 	int i;
 	int j = 0;
+	int words = 0;
 	int len;
 
 	if (str == NULL || str == empty || str == empty2)
@@ -60,6 +61,7 @@ char **strtow(char *str)
 		else if (tmp != empty)
 		{
 			res[j] = tmp;
+			words += 1;
 			j += 1;
 			tmp = "";
 		}
@@ -67,8 +69,10 @@ char **strtow(char *str)
 	if (tmp != empty)
 	{
 		res[j] = tmp;
+		words += 1;
 		j += 1;
 	}
 	res[j] = NULL;
+	res = realloc(res, sizeof(char *) * words + sizeof(NULL));
 	return (res);
 }
