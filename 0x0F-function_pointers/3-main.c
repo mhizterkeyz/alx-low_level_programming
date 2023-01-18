@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     return (99);
   }
   ans = func(atoi(argv[1]), atoi(argv[3]));
-  if (!ans && ans != 0)
+  if (ans == '\0')
   {
     printf("Error\n");
     return (100);
