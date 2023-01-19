@@ -55,12 +55,12 @@ void print_all(const char * const format, ...)
 	va_start(list, format);
 	while (format[i])
 	{
-		hit = print_list_item(format[i], list);
 		if (hit)
 		{
 			printf(", ");
 			hit = 0;
 		}
+		hit = print_list_item(format[i], list);
 		i += 1;
 
 	}
